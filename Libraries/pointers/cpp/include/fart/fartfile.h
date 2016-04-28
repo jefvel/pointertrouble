@@ -7,9 +7,9 @@ namespace fart {
         int a;
     };
     
-    bool TestFunc(const CoolStruct* a){
+    bool TestFunc(CoolStruct* a){
+		a->o = 999;
         return a->a == 4;
     }
-    
 }
 #endif
